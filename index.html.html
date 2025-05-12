@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Somatologist | Your Name</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .whatsapp-float img {
+      width: 55px;
+      height: 55px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-teal-600 text-white py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-3xl font-bold">Thembi Khumalo - Professional Somatologist</h1>
+      <p class="text-lg mt-2">Holistic Health • Skincare • Wellness</p>
+      <nav class="mt-4 space-x-6">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-teal-50 py-12">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Feel Radiant. Be Well.</h2>
+      <p class="text-lg text-gray-600 mb-6">Explore the healing art of somatology through science, touch, and care.</p>
+      <a href="#contact" class="inline-block bg-teal-600 text-white px-6 py-3 rounded-md hover:bg-teal-700">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-100 py-12">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+      <img src="images/thembi-removebg-preview.png"height="200"width="200" alt="Your Profile" class="w-64 h-64 rounded-full object-cover shadow-md"/>
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg text-gray-700">
+          I am a certified somatologist with over <strong>10+</strong> years of experience, specializing in holistic healing, wellness, and
+          aesthetic therapy. I believe in treating the body as a whole through skincare, nutrition, and wellness coaching.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">My Practices</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-6 bg-white shadow rounded-lg">
+          <img src="images/skincare.jpg" alt="Skincare Therapy" class="rounded-md mb-4 w-full h-40 object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Skincare Therapy</h3>
+          <p>Facials, anti-aging, acne treatment, and deep dermal rejuvenation.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <img src="images/body treatment.jpg" alt="Body Treatments" class="rounded-md mb-4 w-full h-40 object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Body Treatments</h3>
+          <p>Detox wraps, exfoliation, and cellulite reduction techniques.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <img src="images/aromatheraapy.jpg" alt="Aromatherapy" class="rounded-md mb-4 w-full h-40 object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Aromatherapy</h3>
+          <p>Healing essential oil therapies to relax, balance, and restore.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <img src="images/reflexology.jpg" alt="Reflexology" class="rounded-md mb-4 w-full h-40 object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Reflexology</h3>
+          <p>Foot therapy that stimulates internal healing via pressure points.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <img src="images/massage.jpg" alt="Massage Therapy" class="rounded-md mb-4 w-full h-40 object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Massage Therapy</h3>
+          <p>Swedish, deep tissue, hot stone, and lymphatic drainage massages.</p>
+        </div>
+        <div class="p-6 bg-white shadow rounded-lg">
+          <img src="images/nutrition.jpg" alt="Nutrition Coaching" class="rounded-md mb-4 w-full h-40 object-cover" />
+          <h3 class="text-xl font-semibold mb-2">Nutrition Coaching</h3>
+          <p>Tailored guidance to support skin, digestion, and mental clarity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain" class="bg-white shadow-md rounded-lg p-6">
+        <div class="mb-4">
+          <label for="name" class="block font-semibold mb-2">Name</label>
+          <input type="text" id="name" name="Name" class="w-full border border-gray-300 px-4 py-2 rounded-md" required />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="Email" class="w-full border border-gray-300 px-4 py-2 rounded-md" required />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block font-semibold mb-2">Message</label>
+          <textarea id="message" name="Message" rows="5" class="w-full border border-gray-300 px-4 py-2 rounded-md" required></textarea>
+        </div>
+        <button type="submit" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/+27603195522" rel="noopener">
+      <img src="https://img.icons8.com/color/96/000000/whatsapp.png" alt="Chat on WhatsApp" />
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-teal-600 text-white py-4 text-center">
+    <p>&copy; 2025 Thembi Khumalo| Somatologist. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
